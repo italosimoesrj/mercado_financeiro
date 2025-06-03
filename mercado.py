@@ -39,9 +39,9 @@ def tarefa():
     carrega(inform)
     
 if __name__=='__main__':
-    print('Iniciando a coleta a cada minuto')
-    schedule.every(1).minute.do(tarefa)
+    print('Iniciando a coleta a cada 5 segundos.')
+    schedule.every(5).seconds.do(tarefa)
     
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(0.5)
