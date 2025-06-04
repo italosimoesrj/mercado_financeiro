@@ -28,42 +28,12 @@ coletor_bitcoin/
 ├── requirements.txt   # (opcional) Bibliotecas necessárias
 └── README.md          # Este arquivo
 🛠️ Como usar
-1. Clone o repositório:
-bash
-Copiar
-Editar
-git clone https://github.com/seuusuario/mercado.git
-cd coletor_bitcoin
-2. (Opcional) Crie e ative um ambiente virtual:
-bash
-Copiar
-Editar
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
-3. Instale as dependências:
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-Você também pode instalar diretamente:
 
-bash
-Copiar
-Editar
-pip install requests schedule
-4. Execute o script:
-bash
-Copiar
-Editar
-python mercado.py
+
 📅 Agendamento
 O script coleta o preço do Bitcoin a cada 1 minuto, utilizando o pacote schedule. Você verá mensagens como:
 
-bash
-Copiar
-Editar
-[15:42:01] Registro inserido: {'Data': '03/06/2025 15:42:01', 'Valor': 68915.23, 'Criptomoeda': 'BTC', 'Moeda': 'USD'}
+
 🗃️ Banco de Dados
 O script cria um banco chamado cotacoes.db com a seguinte estrutura:
 
